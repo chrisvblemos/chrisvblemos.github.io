@@ -1,4 +1,5 @@
-source "https://rubygems.org"
 gemspec
+source 'https://rubygems.org'
 
-gem "jekyll-paginate", "~> 1.1"
+gem 'github-pages'
+gem "webrick"

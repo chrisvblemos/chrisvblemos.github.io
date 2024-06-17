@@ -3,6 +3,7 @@ layout: post
 title: Throwback to the Scratchware Manifesto
 date: 2022-04-20
 categories: videogames
+permalink: pretty
 ---
 
 ![smashcapitalism.](/assets/images/smashcapitalism.webp){:.centered}

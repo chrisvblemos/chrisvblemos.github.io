@@ -7,15 +7,16 @@ baseurl: ''
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 highlighter: rouge
+permalink: pretty
 
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-plugins:
-  - jekyll-paginate
-paginate: 10
-paginate_path: /page-:num
+# plugins:
+#   - jekyll-paginate
+# paginate: 10
+# paginate_path: /page-:num
 
 #disqus-id: your-disqus-id
 

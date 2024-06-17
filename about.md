@@ -2,7 +2,6 @@
 layout: default
 title: About
 permalink: /about/
-birth_year : 1996
 ---
 
 ## About me
