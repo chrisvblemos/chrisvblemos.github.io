@@ -1,8 +1,8 @@
 name: "bits and rants"
 description: ""
 
-url: 'chrisvblemos.github.io' 
-baseurl: ''
+url: 'https://chrisvblemos.github.io' 
+baseurl: '/'
 
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"

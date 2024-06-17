@@ -12,13 +12,13 @@ After finishing the tutorial I had a working website that I could access by typi
 But Mom, I want to have a World Wide Web in my Website URL!
 Fine! It took me some time but I got it fixed on my end.
 
-## an attempt at explaining what was going on
+## My Problem
 
 The problem had to do with SSL certificates and HTTPS redirects. If you follow the guide you'll get to the part where you learn how to make your website have a SSL certificate[^2]. To do this Chad suggests that you use [Certbot](https://certbot.eff.org/) nginx command. With this command, I think Certbot looks at your website nginx configuration file and generate certificates for the websites defined in the **server_name** variable while also modifying the config file so that when a user types "my-website.wtv" into his browser he gets redirected to "https://my-website.wtv".
 
 If you look at the redirect code that was added to the configuration file you'll realize that it is an if-statement that checks if the URL entered by the user is equal to "my-website.ttv". Thus when the user types in "www.my-website.wtv" the if-expression will be false and the server will return a 404.
 
-## my solution
+## One Solution
 
 To fix this we need to update the if-statement so that it includes the "www" case and also make a certificate for it. So the first thing to do is to also generate a certificate for the "www.my-website.wtv" by running the following command:
 

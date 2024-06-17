@@ -1,6 +1,6 @@
 body {
     margin: 40px auto;
-    max-width: 650px;
+    max-width: 800px;
     line-height: 1.6;
     font-size: 18px;
     color: #444;
@@ -27,4 +27,19 @@ img+em {
     display: block;
     margin: auto;
     text-align: center;
+ }
+ 
+ div.highlight {
+    display: block;
+    margin: 30px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    max-height: 600px;
+    font-size: 14px;
+ }
+
+
+
+ pre.highlight {
+    margin: 10px;
  }
