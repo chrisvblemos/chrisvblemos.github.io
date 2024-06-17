@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <div class="background">
+        <head>
+            <meta charset='utf-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            
+            <title>
+                {% if page.title %}
+                    {{ site.name }} &mdash; {{ page.title }} 
+                {% else %} 
+                    {{ site.name }} &mdash; {{ site.description }}
+                {% endif %}
+            </title>
+
+            <link rel='stylesheet' href='{{ site.url }}/assets/css/styles.css' type='text/css'>
+            <link rel='stylesheet' href='{{ site.url }}/assets/css/syntax.css' type='text/css'>
+
+        </head>
+
+        <div class="container">
+            <body> 
+                {% include header.html %}
+                
+                {{ content }}
+            <hr>
+            
+            </body>
+        </div>
+    </div>
+</html>
+

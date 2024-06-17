@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<blockquote>
+
+  “I think it's much more interesting to live not knowing than to have answers which might be wrong. I have approximate answers and possible beliefs and different degrees of uncertainty about different things, but I am not absolutely sure of anything and there are many things I don't know anything about...” <cite>Richard P. Feynman</cite>
+
+</blockquote>
+
+Home to my personal thoughts and poorly researched ideas that at some point I decided are interesting enough to be recorded somewhere apart from my brain.
+
+<h3>Blog Posts</h3>
+{% for post in site.posts %}
+<section>
+    <a href='{{ site.url }}{{ post.url }}' title='{{ post.title }}'>
+      {{ post.title }}
+    </a>&mdash; {{ post.date | date: "%-d %B %Y"  }}</a>
+</section>       
+{% endfor %}
+
+<br>
+<br>
+<br>
+
+<!-- {% if paginator.previous_page %}
+<a href='{{ site.url }}{{ paginator.previous_page_path }}'>Previous</a>
+{% endif %}
+
+&mdash; {{ paginator.page }} of {{ paginator.total_pages }} &mdash;
+
+{% if paginator.next_page %}
+<a href='{{ site.url }}{{ paginator.next_page_path }}'>Next</a>
+{% endif %} -->
+

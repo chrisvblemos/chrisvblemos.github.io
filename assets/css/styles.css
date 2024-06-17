@@ -1,0 +1,30 @@
+body {
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+    padding: 0 10px;
+    background-color: #eee;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2
+}
+
+.centered {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    margin-bottom: 25px;
+
+}
+
+img+em {
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    text-align: center;
+ }
