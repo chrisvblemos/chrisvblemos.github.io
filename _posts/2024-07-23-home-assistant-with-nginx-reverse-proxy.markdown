@@ -2,7 +2,7 @@
 layout: post
 title: Configure Home Assistant with Nginx reverse proxy
 date: 2024-07-23
-categories: homelab, tech, nginx, homeassistant, automation
+categories: homelab tech nginx homeassistant automation
 ---
 
 To set up Home Assistant with a Nginx reverse proxy, you must edit the `configuration.yaml` file of Home Assistant and add the following settings:
