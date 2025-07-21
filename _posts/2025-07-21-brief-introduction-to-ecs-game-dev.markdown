@@ -15,7 +15,10 @@ ECS stants for Entity-Component-System. It's just a name that will make sense la
 
 The idea behind ECS is to leverage how CPUs work at the memory level. The core of the idea is to use Structures of Arrays (SoA) so that, when the CPU needs data to run some kind of logic, all data needed for the calculation is contiguous in memory, which in turn, reduces the amount of cache misses during iterations - when the CPU has to look up for data in the memory (think of RAM memory), this is slower than looking at memory that is already present in the CPU cache (the CPU cache is physically closer to the CPU).
 
-![](/assets/images/9fg0p.png)
+<p align="center">
+  <img src="/assets/images/9fg0p.png"/>
+</p>
+
 > In reality, CPUs have more than one cache. Each closer to the CPU, and thus, faster to read from - but at the same time, the faster and closer a cache is to the CPU, the smaller the data it is able to store at each cycle. [There is this great video on the matter that explains why having data stored in arrays helps the CPU.](https://www.youtube.com/watch?v=247cXLkYt2M)
 
 In object oriented programming, you have pointers to instances of classes. You then have to access the data that these pointers point to. But everytime the CPU needs to read memory that a pointer is pointing to, it has to spend time fetching the data from the main memory - this is the slowest task in terms of memory transfer if we exclude reading from hard drives.
